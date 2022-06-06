@@ -6,6 +6,10 @@
   justify-content: center;
 }
 
+.headerContainer {
+  padding-bottom: 10px;
+}
+
 .figureContainer {
   margin: 0px 20px;
 }
@@ -18,10 +22,6 @@
   margin: 10px 20px;
 }
 
-.headerContainer {
-  padding-bottom: 10px;
-}
-
 .keyboard {
   margin: 10px 10px;
 }
@@ -29,6 +29,24 @@
 .keyboard button {
   width: 40px;
   height: 40px;
+}
+
+.resultLose {
+  background-color: red;
+  font-size: xx-large;
+}
+
+.resultLose button {
+  margin-bottom: 20px;
+}
+
+.resultWin {
+  background-color: gold;
+  font-size: xx-large;
+}
+
+.resultWin button {
+  margin-bottom: 20px;
 }
 
 .wordContainer {
@@ -49,21 +67,25 @@
     justify-content: center;
   }
 
+  .headerContainer {
+    grid-area: header;
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+
   .figureContainer {
     grid-area: figure;
     margin-bottom: 30px;
+  }
+
+  .guessedLetters {
+    padding: 10px;
   }
 
   .guessesContainer {
     grid-area: guesses;
     justify-content: flex-start;
     border: solid black 1px;
-  }
-
-  .headerContainer {
-    grid-area: header;
-    font-size: 20px;
-    padding-bottom: 30px;
   }
 
   .keyboard {
@@ -75,6 +97,14 @@
   .keyboard button {
     width: 60px;
     height: 60px;
+  }
+
+  .resultLose {
+    grid-area: word;
+  }
+
+  .resultWin {
+    grid-area: word;
   }
 
   .wordContainer {

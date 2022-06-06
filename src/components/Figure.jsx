@@ -8,10 +8,11 @@ import leg2 from '../images/6.jpeg';
 
 export const Figure = ({ uniqueLetters }) => {
   const images = [gallows, head, body, arm1, arm2, leg1, leg2];
+  const length = uniqueLetters.length;
 
   return (
     <div className="figureContainer">
-      <img src={images[0]} alt="hangman gallows" />
+      <img src={images[length]} alt="hangman gallows" />
     </div>
   );
 };
