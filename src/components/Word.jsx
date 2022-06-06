@@ -68,6 +68,7 @@ export const Word = ({
       <div className="resultLose">
         <p>You have lost!</p>
         <p>Try again!</p>
+        <p>The word was: {word}</p>
         <button onClick={handleClick}>Click to reset</button>
       </div>
     );
