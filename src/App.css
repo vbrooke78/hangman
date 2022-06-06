@@ -22,6 +22,19 @@
   margin: 10px 20px;
 }
 
+.guessedLetters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.guessedLetters p {
+  margin: 10px;
+  padding: 10px 10px;
+  font-size: x-large;
+  border: solid red 1px;
+}
+
 .keyboard {
   margin: 10px 10px;
 }
@@ -33,7 +46,7 @@
 
 .resultLose {
   background-color: red;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .resultLose button {
@@ -42,7 +55,7 @@
 
 .resultWin {
   background-color: gold;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .resultWin button {
@@ -80,6 +93,13 @@
 
   .guessedLetters {
     padding: 10px;
+  }
+
+  .guessedLetters p {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: xx-large;
+    border: solid red 1px;
   }
 
   .guessesContainer {
