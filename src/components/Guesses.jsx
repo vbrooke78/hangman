@@ -6,7 +6,6 @@ export const Guesses = ({ uniqueLetters }) => {
         {uniqueLetters.map((letter) => {
           return <p>{letter}</p>;
         })}
-        {/* <p className="guessedLetters">{uniqueLetters}</p> */}
       </div>
     </div>
   );
