@@ -1,3 +1,85 @@
 .App {
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.figureContainer {
+  margin: 0px 20px;
+}
+
+.guessesContainer {
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px 20px;
+}
+
+.headerContainer {
+  padding-bottom: 10px;
+}
+
+.keyboard {
+  margin: 10px 10px;
+}
+
+.keyboard button {
+  width: 40px;
+  height: 40px;
+}
+
+.wordContainer {
+  margin: 10px;
+  font-size: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .App {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-areas:
+      'header header'
+      'figure guesses'
+      'figure word'
+      'keyboard keyboard';
+    justify-content: center;
+  }
+
+  .figureContainer {
+    grid-area: figure;
+    margin-bottom: 30px;
+  }
+
+  .guessesContainer {
+    grid-area: guesses;
+    justify-content: flex-start;
+    border: solid black 1px;
+  }
+
+  .headerContainer {
+    grid-area: header;
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+
+  .keyboard {
+    grid-area: keyboard;
+    padding-left: 70px;
+    max-width: 85%;
+  }
+
+  .keyboard button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .wordContainer {
+    grid-area: word;
+    max-width: 90%;
+    font-size: 40px;
+  }
 }
